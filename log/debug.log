@@ -1,0 +1,343 @@
+2018-05-18 14:53:33,220 INFO[org.springframework.web.context.ContextLoader:285] - Root WebApplicationContext: initialization started
+  2018-05-18 14:53:33,286 INFO[org.springframework.web.context.support.XmlWebApplicationContext:510] - Refreshing Root WebApplicationContext: startup date [Fri May 18 14:53:33 CST 2018]; root of context hierarchy
+  2018-05-18 14:53:33,317 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:315] - Loading XML bean definitions from class path resource [spring.xml]
+  2018-05-18 14:53:33,630 INFO[org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172] - Loading properties file from class path resource [jdbc.properties]
+  2018-05-18 14:53:33,661 INFO[org.springframework.beans.factory.support.DefaultListableBeanFactory:603] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@26b8e467: defining beans [test,userServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,userMapper]; root of factory hierarchy
+  2018-05-18 14:53:33,841 INFO[com.mchange.v2.log.MLog:80] - MLog clients using log4j logging.
+  2018-05-18 14:53:33,919 INFO[com.mchange.v2.c3p0.C3P0Registry:204] - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+  2018-05-18 14:53:34,319 INFO[com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource:462] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge1da9vvmyqld1jz6jq9|4af47678, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver  , factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge1da9vvmyqld1jz6jq9|4af47678, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+  2018-05-18 14:53:34,332 WARN[com.mchange.v2.c3p0.DriverManagerDataSource:107] - Could not load driverClass com.mysql.jdbc.Driver  
+  java.lang.ClassNotFoundException: com.mysql.jdbc.Driver  
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:430)
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:383)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:191)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:100)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:132)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+2018-05-18 14:53:34,332 WARN[com.mchange.v2.c3p0.DriverManagerDataSource:107] - Could not load driverClass com.mysql.jdbc.Driver  
+  java.lang.ClassNotFoundException: com.mysql.jdbc.Driver  
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:430)
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:383)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:191)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:100)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:132)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+2018-05-18 14:53:34,332 WARN[com.mchange.v2.c3p0.DriverManagerDataSource:107] - Could not load driverClass com.mysql.jdbc.Driver  
+  java.lang.ClassNotFoundException: com.mysql.jdbc.Driver  
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:430)
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:383)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:191)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:100)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:132)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+2018-05-18 14:53:54,301 WARN[com.mchange.v2.async.ThreadPoolAsynchronousRunner:608] - com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@719a840b -- APPARENT DEADLOCK!!! Creating emergency threads for unassigned pending tasks!
+  2018-05-18 14:53:54,303 WARN[com.mchange.v2.async.ThreadPoolAsynchronousRunner:624] - com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@719a840b -- APPARENT DEADLOCK!!! Complete Status: 
+	Managed Threads: 3
+	Active Threads: 3
+	Active Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@6f4b39e1 (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@33c51bdc (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@51a82311 (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2)
+	Pending Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@75965af8
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@622e8c17
+Pool thread stack traces:
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0,5,main]
+		com.mysql.jdbc.MysqlIO.quit(MysqlIO.java:2148)
+		com.mysql.jdbc.ConnectionImpl.realClose(ConnectionImpl.java:4269)
+		com.mysql.jdbc.ConnectionImpl.cleanup(ConnectionImpl.java:1377)
+		com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:793)
+		com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+		sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+		sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+		sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+		com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+		com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:395)
+		com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1,5,main]
+		com.mysql.jdbc.MysqlIO.quit(MysqlIO.java:2148)
+		com.mysql.jdbc.ConnectionImpl.realClose(ConnectionImpl.java:4269)
+		com.mysql.jdbc.ConnectionImpl.cleanup(ConnectionImpl.java:1377)
+		com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:793)
+		com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+		sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+		sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+		sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+		com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+		com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:395)
+		com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2,5,main]
+		com.mysql.jdbc.MysqlIO.quit(MysqlIO.java:2148)
+		com.mysql.jdbc.ConnectionImpl.realClose(ConnectionImpl.java:4269)
+		com.mysql.jdbc.ConnectionImpl.cleanup(ConnectionImpl.java:1377)
+		com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:793)
+		com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+		sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+		sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+		sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+		com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+		com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:395)
+		com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+
+
+  2018-05-18 14:53:54,303 WARN[com.mchange.v2.c3p0.DriverManagerDataSource:107] - Could not load driverClass com.mysql.jdbc.Driver  
+  java.lang.ClassNotFoundException: com.mysql.jdbc.Driver  
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:430)
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:383)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:191)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:100)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:132)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPerTaskAsynchronousRunner$TaskThread.run(ThreadPerTaskAsynchronousRunner.java:255)
+2018-05-18 14:53:54,303 WARN[com.mchange.v2.c3p0.DriverManagerDataSource:107] - Could not load driverClass com.mysql.jdbc.Driver  
+  java.lang.ClassNotFoundException: com.mysql.jdbc.Driver  
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:430)
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:383)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:191)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:100)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:132)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPerTaskAsynchronousRunner$TaskThread.run(ThreadPerTaskAsynchronousRunner.java:255)
+2018-05-18 14:54:54,316 WARN[com.mchange.v2.async.ThreadPoolAsynchronousRunner:416] - Task com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@33c51bdc (in deadlocked PoolThread) failed to complete in maximum time 60000ms. Trying interrupt().
+  2018-05-18 14:54:54,318 WARN[com.mchange.v2.async.ThreadPoolAsynchronousRunner:416] - Task com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@6f4b39e1 (in deadlocked PoolThread) failed to complete in maximum time 60000ms. Trying interrupt().
+  2018-05-18 14:54:54,319 WARN[com.mchange.v2.async.ThreadPoolAsynchronousRunner:416] - Task com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@51a82311 (in deadlocked PoolThread) failed to complete in maximum time 60000ms. Trying interrupt().
+  2018-05-18 14:55:04,361 INFO[org.springframework.web.context.ContextLoader:285] - Root WebApplicationContext: initialization started
+  2018-05-18 14:55:04,427 INFO[org.springframework.web.context.support.XmlWebApplicationContext:510] - Refreshing Root WebApplicationContext: startup date [Fri May 18 14:55:04 CST 2018]; root of context hierarchy
+  2018-05-18 14:55:04,474 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:315] - Loading XML bean definitions from class path resource [spring.xml]
+  2018-05-18 14:55:04,833 INFO[org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172] - Loading properties file from class path resource [jdbc.properties]
+  2018-05-18 14:55:04,865 INFO[org.springframework.beans.factory.support.DefaultListableBeanFactory:603] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1c87320c: defining beans [test,userServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,userMapper]; root of factory hierarchy
+  2018-05-18 14:55:05,046 INFO[com.mchange.v2.log.MLog:80] - MLog clients using log4j logging.
+  2018-05-18 14:55:05,113 INFO[com.mchange.v2.c3p0.C3P0Registry:204] - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+  2018-05-18 14:55:05,324 INFO[com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource:462] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge1da9vvn0oyvpcufrp|33183b3d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge1da9vvn0oyvpcufrp|33183b3d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+  2018-05-18 14:55:25,317 WARN[com.mchange.v2.async.ThreadPoolAsynchronousRunner:608] - com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@1715ab47 -- APPARENT DEADLOCK!!! Creating emergency threads for unassigned pending tasks!
+  2018-05-18 14:55:25,319 WARN[com.mchange.v2.async.ThreadPoolAsynchronousRunner:624] - com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@1715ab47 -- APPARENT DEADLOCK!!! Complete Status: 
+	Managed Threads: 3
+	Active Threads: 3
+	Active Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@3314752 (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@18415a21 (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@6a8438f7 (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0)
+	Pending Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@eb816c3
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@57de63c1
+Pool thread stack traces:
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0,5,main]
+		java.lang.Thread.sleep(Native Method)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1805)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1,5,main]
+		com.mysql.jdbc.MysqlIO.quit(MysqlIO.java:2165)
+		com.mysql.jdbc.ConnectionImpl.realClose(ConnectionImpl.java:4269)
+		com.mysql.jdbc.ConnectionImpl.cleanup(ConnectionImpl.java:1377)
+		com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:793)
+		com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+		sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+		sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+		sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+		com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+		com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:395)
+		com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2,5,main]
+		java.lang.Thread.sleep(Native Method)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1805)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+
+
+  2018-05-18 14:55:41,001 INFO[org.springframework.web.context.ContextLoader:285] - Root WebApplicationContext: initialization started
+  2018-05-18 14:55:41,075 INFO[org.springframework.web.context.support.XmlWebApplicationContext:510] - Refreshing Root WebApplicationContext: startup date [Fri May 18 14:55:41 CST 2018]; root of context hierarchy
+  2018-05-18 14:55:41,106 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:315] - Loading XML bean definitions from class path resource [spring.xml]
+  2018-05-18 14:55:41,401 INFO[org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172] - Loading properties file from class path resource [jdbc.properties]
+  2018-05-18 14:55:41,432 INFO[org.springframework.beans.factory.support.DefaultListableBeanFactory:603] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@12731ffa: defining beans [test,userServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,userMapper]; root of factory hierarchy
+  2018-05-18 14:55:41,604 INFO[com.mchange.v2.log.MLog:80] - MLog clients using log4j logging.
+  2018-05-18 14:55:41,682 INFO[com.mchange.v2.c3p0.C3P0Registry:204] - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+  2018-05-18 14:55:41,890 INFO[com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource:462] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge1da9vvn1h6cfa3jp0|2dabdbf2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge1da9vvn1h6cfa3jp0|2dabdbf2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+  2018-05-18 14:59:43,143 INFO[org.springframework.web.context.ContextLoader:285] - Root WebApplicationContext: initialization started
+  2018-05-18 14:59:43,204 INFO[org.springframework.web.context.support.XmlWebApplicationContext:510] - Refreshing Root WebApplicationContext: startup date [Fri May 18 14:59:43 CST 2018]; root of context hierarchy
+  2018-05-18 14:59:43,235 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:315] - Loading XML bean definitions from class path resource [spring.xml]
+  2018-05-18 14:59:43,548 INFO[org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172] - Loading properties file from class path resource [jdbc.properties]
+  2018-05-18 14:59:43,564 INFO[org.springframework.beans.factory.support.DefaultListableBeanFactory:603] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@570e711b: defining beans [test,userServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,userMapper]; root of factory hierarchy
+  2018-05-18 14:59:43,735 INFO[com.mchange.v2.log.MLog:80] - MLog clients using log4j logging.
+  2018-05-18 14:59:43,798 INFO[com.mchange.v2.c3p0.C3P0Registry:204] - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+  2018-05-18 14:59:44,020 INFO[com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource:462] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge1da9vvn6o0717izole|72f221de, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge1da9vvn6o0717izole|72f221de, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+  2018-05-18 15:00:03,989 WARN[com.mchange.v2.async.ThreadPoolAsynchronousRunner:608] - com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@230fb30e -- APPARENT DEADLOCK!!! Creating emergency threads for unassigned pending tasks!
+  2018-05-18 15:00:03,992 WARN[com.mchange.v2.async.ThreadPoolAsynchronousRunner:624] - com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@230fb30e -- APPARENT DEADLOCK!!! Complete Status: 
+	Managed Threads: 3
+	Active Threads: 3
+	Active Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@511697b7 (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@224298f8 (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@4248d35a (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2)
+	Pending Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@3b2bdbb5
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@3c65666c
+Pool thread stack traces:
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0,5,main]
+		com.mysql.jdbc.MysqlIO.quit(MysqlIO.java:2148)
+		com.mysql.jdbc.ConnectionImpl.realClose(ConnectionImpl.java:4269)
+		com.mysql.jdbc.ConnectionImpl.cleanup(ConnectionImpl.java:1377)
+		com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:793)
+		com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+		sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+		sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+		sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+		com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+		com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:395)
+		com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2,5,main]
+		com.mysql.jdbc.MysqlIO.quit(MysqlIO.java:2148)
+		com.mysql.jdbc.ConnectionImpl.realClose(ConnectionImpl.java:4269)
+		com.mysql.jdbc.ConnectionImpl.cleanup(ConnectionImpl.java:1377)
+		com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:793)
+		com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+		sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+		sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+		sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+		com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+		com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:395)
+		com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1,5,main]
+		com.mysql.jdbc.MysqlIO.quit(MysqlIO.java:2148)
+		com.mysql.jdbc.ConnectionImpl.realClose(ConnectionImpl.java:4269)
+		com.mysql.jdbc.ConnectionImpl.cleanup(ConnectionImpl.java:1377)
+		com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:793)
+		com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+		sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+		sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+		sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+		com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+		com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:395)
+		com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+
+
+  
