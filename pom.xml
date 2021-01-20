@@ -12,7 +12,7 @@
     <properties>  
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>  
         <spring.version>4.1.4.RELEASE</spring.version>  
-        <jackson.version>2.5.0</jackson.version>  
+        <jackson.version>2.12.1</jackson.version>  
     </properties>  
     
    <!--Maven依赖 需要更换可以到http://mvnrepository.com进行查询-->  
@@ -193,19 +193,19 @@
 		   <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-core</artifactId>
-                <version>2.9.6</version>
+                <version>2.12.1</version>
             </dependency>
             <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-databind</artifactId>
-                <version>2.9.6</version>
+                <version>2.12.1</version>
             </dependency>
             <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations -->
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-annotations</artifactId>
-                <version>2.9.6</version>
+                <version>2.12.1</version>
             </dependency>
             
             <dependency>
